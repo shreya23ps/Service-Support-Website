@@ -1,0 +1,113 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Death Certificate Application - BHARAT</title>
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="{% static 'main/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'main/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'main/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'main/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'main/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="{% static 'main/css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+<section id="hero" class="hero section dark-background">
+
+<!-- Death Certificate Application Form -->
+<section id="death-certificate-application" class="death-certificate-application section py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Death Certificate Application</h2>
+
+        <div class="comment-form">
+            <form action="{% url 'death_application_submitted' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <h4>Personal Details of the Deceased</h4>
+                <div class="form-group">
+                    <label for="deceased_name">Full Name <span style="color:red;">*</span></label>
+                    <input type="text" id="deceased_name" name="deceased_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="deceased_dob">Date of Birth <span style="color:red;">*</span></label>
+                    <input type="date" id="deceased_dob" name="deceased_dob" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="deceased_dod">Date of Death <span style="color:red;">*</span></label>
+                    <input type="date" id="deceased_dod" name="deceased_dod" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="deceased_gender">Gender <span style="color:red;">*</span></label>
+                    <select id="deceased_gender" name="deceased_gender" class="form-control" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="deceased_aadhaar">Aadhaar No <span style="color:red;">*</span></label>
+                    <input type="text" id="deceased_aadhaar" name="deceased_aadhaar" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="deceased_address">Address <span style="color:red;">*</span></label>
+                    <textarea id="deceased_address" name="deceased_address" class="form-control" rows="3" required></textarea>
+                </div>
+
+                <h4>Applicant Details</h4>
+                <div class="form-group">
+                    <label for="applicant_name">Full Name <span style="color:red;">*</span></label>
+                    <input type="text" id="applicant_name" name="applicant_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="applicant_relation">Relation to Deceased <span style="color:red;">*</span></label>
+                    <input type="text" id="applicant_relation" name="applicant_relation" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="applicant_address">Address <span style="color:red;">*</span></label>
+                    <textarea id="applicant_address" name="applicant_address" class="form-control" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="applicant_contact">Contact Number <span style="color:red;">*</span></label>
+                    <input type="tel" id="applicant_contact" name="applicant_contact" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="applicant_email">Email Address</label>
+                    <input type="email" id="applicant_email" name="applicant_email" class="form-control">
+                </div>
+
+                <h4>Supporting Documents</h4>
+                <div class="form-group">
+                    <label for="documents">Upload Supporting Documents</label>
+                    <input type="file" id="documents" name="documents" class="form-control" multiple>
+                    <p>Upload scanned copies of required documents (e.g., ID proof, death certificate from hospital).</p>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+</section><!-- /Death Certificate Application Form -->
+</section><!-- /Hero Section -->
+</body>
+</html>

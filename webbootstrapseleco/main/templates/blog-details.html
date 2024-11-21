@@ -1,0 +1,226 @@
+{% load static %}
+{% csrf_token %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>{{ blog_post.title }} - BHARAT</title>
+  <meta name="description" content="{{ blog_post.meta_description }}">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'main/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'main/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'main/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'main/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <h1 class="sitename">BHARAT</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'service-details' %}">Services</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Blog Details</h1>
+        <p>Insights and updates that provide valuable information.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="current">Blog Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8">
+
+          <!-- Blog Details Section -->
+          <section id="blog-details" class="blog-details section">
+            <div class="container">
+
+              <article class="article">
+                <h2 class="title">{{ blog_post.title }}</h2>
+
+                <div class="meta-top">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">{{ blog_post.author }}</a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="{{ blog_post.created_at|date:'Y-m-d' }}">{{ blog_post.created_at|date:'M j, Y' }}</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">{{ blog_post.comments.count }} Comments</a></li>
+                  </ul>
+                </div><!-- End meta top -->
+
+                <div class="content">
+                  {{ blog_post.content|safe }}
+                </div><!-- End post content -->
+
+                <div class="meta-bottom">
+                  <i class="bi bi-folder"></i>
+                  <ul class="cats">
+                    {% for category in blog_post.categories.all %}
+                      <li><a href="#">{{ category.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+
+                  <i class="bi bi-tags"></i>
+                  <ul class="tags">
+                    {% for tag in blog_post.tags.all %}
+                      <li><a href="#">{{ tag.name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div><!-- End meta bottom -->
+
+              </article>
+
+            </div>
+          </section><!-- /Blog Details Section -->
+
+          <!-- Blog Comments Section -->
+          <section id="blog-comments" class="blog-comments section">
+
+            <div class="container">
+
+              <h4 class="comments-count">{{ blog_post.comments.count }} Comments</h4>
+
+              {% for comment in blog_post.comments.all %}
+                <div id="comment-{{ comment.id }}" class="comment">
+                    <div>
+                      <h5><strong>{{ comment.name }}</strong></h5>
+                      <time datetime="{{ comment.created_at|date:'Y-m-d' }}">{{ comment.created_at|date:'M j, Y' }}</time>
+                      <p>{{ comment.content }}</p>
+                    </div>
+                </div>
+              {% endfor %}
+
+               <!-- Comment Form Section -->
+          <section id="comment-form" class="comment-form section">
+            <div class="container">
+
+              <form action="" method="post">
+                {% csrf_token %}
+
+                <h4>Post Comment</h4>
+                <p>Your email address will not be published. Required fields are marked * </p>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name*">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input name="email" type="text" class="form-control" placeholder="Your Email*">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col form-group">
+                    <textarea name="content" class="form-control" placeholder="Your Comment*"></textarea>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Post Comment</button>
+                </div>
+
+              </form>
+
+            </div>
+          </section><!-- /Comment Form Section -->
+
+
+            </div>
+          </section><!-- End Blog Comments Section -->
+
+        </div>
+
+      </div>
+    </div>
+
+</main>
+
+  <!-- End #main -->
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">BHARAT</h3>
+      <p>Providing seamless access to essential government services with transparency and efficiency. Your one-stop portal for managing vital documents and information with ease.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">BHARAT</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">Group 9</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'main/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'main/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'main/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'main/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'main/js/main.js' %}"></script>
+
+</body>
+
+</html>

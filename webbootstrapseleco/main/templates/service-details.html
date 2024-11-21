@@ -1,0 +1,282 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Service Details - Selecao Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+ <!-- Favicons -->
+<link href="{% static 'main/img/favicon.png' %}" rel="icon">
+<link href="{% static 'main/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{% static 'main/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/aos/aos.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="{% static 'main/css/main.css' %}" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">BHARAT</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Service Details</h1>
+        <p>Explore our comprehensive suite of government services designed to simplify your essential tasks, from document applications to status checks</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-box">
+              <h4>Services List</h4>
+              <div class="services-list">
+                <a href="{% url 'death_application' %}" class="active"><i class="bi bi-arrow-right-circle"></i><span>Death Certificate Application</span></a>
+                <a href="{% url 'pan_application' %}"><i class="bi bi-arrow-right-circle"></i><span>PAN Card Application</span></a>
+                <a href="{% url 'driving_license_application' %}"><i class="bi bi-arrow-right-circle"></i><span>Driving License Application</span></a>
+                <a href="{% url 'ration_card_application' %}"><i class="bi bi-arrow-right-circle"></i><span>Ration Card Application</span></a>
+                <a href="{% url 'address_change_application' %}"><i class="bi bi-arrow-right-circle"></i><span>Address Change Services</span></a>
+                <a href="{% url 'voter_registration' %}"><i class="bi bi-arrow-right-circle"></i><span>Voter Registration Services</span></a>
+                <a href="{% url 'check_pan_card_status' %}"><i class="bi bi-arrow-right-circle"></i><span>Check PAN card status</span></a>
+                <a href="{% url 'check_driving_license_status' %}"><i class="bi bi-arrow-right-circle"></i><span>Check Driving License status</span></a>
+                <a href="{% url 'check_ration_card_status' %}"><i class="bi bi-arrow-right-circle"></i><span>Check Ration Card status</span></a>
+                <a href="{% url 'check_pension_status' %}"><i class="bi bi-arrow-right-circle"></i><span>Check Pension status</span></a>
+
+
+
+              </div>
+            </div><!-- End Services List -->
+            
+
+            <div class="service-box">
+              <h4>Download Catalog</h4>
+              <div class="download-catalog">
+                <a href="{% url 'download_services_pdf' %}"><i class="bi bi-filetype-pdf"></i><span>Catalog PDF</span></a>
+                <a href="{% url 'download_services_doc' %}"><i class="bi bi-file-earmark-word"></i><span>Catalog DOC</span></a>
+              </div>
+            </div><!-- End Services List -->
+
+      <!--__  <div class="help-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-headset help-icon"></i>
+              <h4>Have a Question?</h4>
+              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+91 7350069723</span></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:rahulmsonawane177@gmail.com">contact@example.com</a></p>
+            </div>-->
+
+          </div>
+
+          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'main/img/services.jpg' %}" alt="" class="img-fluid services-img">
+            <h3>Streamlined Access to Essential Government Services</h3>
+            <p>
+              Our platform is designed to make accessing and managing government services easier and more efficient. Whether you need to apply for a new document or check the status of an existing one, our system provides a user-friendly and transparent experience.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Simple and intuitive application process for certificates such as death and PAN cards.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Real-time updates and tracking for all your document applications.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Centralized access to a wide range of government databases and services.</span></li>
+            </ul>
+            <p>
+              We prioritize efficiency and user satisfaction, offering a comprehensive platform that meets the highest standards of service quality. Our goal is to ensure you receive timely, accurate information and support for all your government-related needs.
+            </p>
+            <p>
+              By leveraging advanced technology and a user-centered approach, we aim to make your interactions with government services as smooth and straightforward as possible. Whether you're applying for a new document or checking the status of an existing one, our platform is here to help you every step of the way.
+            </p>
+          </div>
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade" data-aos-delay="100">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-4">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Class room - 301, Gargi Building, MIT-WPU, Kothrud, Pune, Bharat. </p>
+                </div>
+              </div><!-- End Info Item -->
+  
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+91 7350069723</p>
+                </div>
+              </div><!-- End Info Item -->
+  
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>bharat@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+  
+            </div>
+  
+            <div class="col-lg-8">
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+  
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+  
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+  
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+  
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+  
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+  
+                    <button type="submit">Send Message</button>
+                  </div>
+  
+                </div>
+              </form>
+            </div><!-- End Contact Form -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">BHARAT</h3>
+      <p>Providing seamless access to essential government services with transparency and efficiency. Your one-stop portal for managing vital documents and information with ease.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">BHARAT</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">Group 9</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+<script src="{% static 'main/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'main/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'main/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'main/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'main/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'main/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'main/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'main/js/main.js' %}"></script>
+
+</body>
+
+</html>

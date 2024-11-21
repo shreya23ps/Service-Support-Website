@@ -1,0 +1,1015 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Service Support Website</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'main/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'main/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'main/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'main/vendor/swiper/swiper-bundle.min.css' %} " rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'main/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="{% static 'main/img/logo.png" alt=""> -->
+        <h1 class="sitename">BHARAT</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>BHARAT</span></h2>
+            <p class="animate__animated animate__fadeInUp"></p>This website allows users to apply for and manage essential government documents such as death certificates and PAN cards. It provides real-time updates, access to various public databases, and a user-friendly interface for checking document statuses and managing applications.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">User-Friendly Design</h2>
+            <p class="animate__animated animate__fadeInUp">Navigate our clean, intuitive interface with ease, providing a smooth and straightforward user experience.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Responsive Experience</h2>
+            <p class="animate__animated animate__fadeInUp">Access the website seamlessly on any device—desktop, tablet, or smartphone—with our fully responsive design.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Who we are</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              We are a dedicated team committed to simplifying access to essential government services. Our mission is to provide a user-friendly platform that streamlines the application process for vital documents and offers comprehensive access to public databases. With a focus on efficiency, security, and user satisfaction, we aim to make government services more accessible and transparent for everyone.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Dedicated Expertise: A team of professionals focused on simplifying government services and enhancing user experience.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Streamlined Access: Providing a user-friendly platform for easy application and management of essential documents.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Commitment to Transparency: Ensuring efficient, secure, and transparent processes for accessing public information and services.</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>We are committed to enhancing your experience with government services by providing a seamless and efficient platform. Our team is dedicated to understanding and addressing your needs, ensuring that our services simplify the complexities of document applications and public information access. By leveraging advanced technology and user-centered design, we make it easier for you to obtain necessary documents, track your application status, and manage your information with confidence. Our goal is to empower you with a reliable, transparent, and user-friendly service that supports your needs every step of the way.
+            </p>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+    
+        <ul class="nav nav-tabs row d-flex" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+              <i class="bi bi-binoculars"></i>
+              <h4 class="d-none d-lg-block">Easy Document Application</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <i class="bi bi-box-seam"></i>
+              <h4 class="d-none d-lg-block">Real-Time Status Tracking</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <i class="bi bi-brightness-high"></i>
+              <h4 class="d-none d-lg-block">Comprehensive Information Access</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+              <i class="bi bi-command"></i>
+              <h4 class="d-none d-lg-block">User-Friendly Interface</h4>
+            </a>
+          </li>
+        </ul><!-- End Tab Nav -->
+    
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+    
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Seamlessly Apply for Various Documents</h3>
+                <p class="fst-italic">
+                  Our platform simplifies the application process for essential documents such as death certificates, PAN cards, and more.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i>
+                    <span>Effortlessly apply for vital records and official documents.</span>
+                  </li>
+                  <li><i class="bi bi-check2-all"></i> <span>Streamlined form submission with step-by-step guidance.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Integrated services for different document types in one place.</span></li>
+                </ul>
+                <p>
+                  Experience a simplified document application process with our user-friendly forms and easy-to-follow instructions, designed to save you time and effort.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'main/img/working-1.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+    
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Track Your Application Status in Real-Time</h3>
+                <p>
+                  Stay informed about the progress of your applications with our real-time tracking system.
+                </p>
+                <p class="fst-italic">
+                  Receive updates and notifications as your application moves through each stage.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Instant updates on application status.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Real-time notifications for any changes or actions needed.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Easy access to tracking information from your user dashboard.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Transparent and timely updates to keep you informed.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'main/img/working-2.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+    
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Access Comprehensive Information Efficiently</h3>
+                <p>
+                  Gain easy access to detailed information about various government services and documents.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Centralized information on services and requirements.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Detailed FAQs and guidelines for user support.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Searchable database for quick information retrieval.</span></li>
+                </ul>
+                <p class="fst-italic">
+                  Our platform offers a wealth of information at your fingertips, helping you navigate the complexities of government services with ease.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'main/img/working-3.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+    
+          <div class="tab-pane fade" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Navigate with a User-Friendly Interface</h3>
+                <p>
+                  Our intuitive design ensures a smooth and enjoyable user experience throughout the website.
+                </p>
+                <p class="fst-italic">
+                  Designed for ease of use, our platform provides a straightforward and engaging experience.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Easy-to-navigate interface with clear options and instructions.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Responsive design for accessibility on all devices.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Consistent design elements for a seamless user experience.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'main/img/working-4.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+    
+        </div>
+    
+      </div>
+    
+    </section><!-- /Features Section -->
+    
+
+    <!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+
+  <div class="container">
+
+    <div class="row" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-9 text-center text-xl-start">
+        <h3>Get Started with Our Services Today!</h3>
+        <p>Experience the convenience of managing your government-related documents and services with ease. Apply for essential records, track your application status in real-time, and access comprehensive information—all from one user-friendly platform. Join us in simplifying your interactions with government services.</p>
+      </div>
+      <div class="col-xl-3 cta-btn-container text-center">
+        <a class="cta-btn align-middle" href="#services">Explore Our Services</a>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Call To Action Section -->
+
+
+   <!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>What we do offer</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
+          </div>
+          <a href="{% url 'service-details' %}" class="stretched-link">
+            <h3>Death Certificate Application</h3>
+          </a>
+          <p>Effortlessly apply for a death certificate with our streamlined process. Our system simplifies the submission and tracking of your application.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+          </div>
+          <a href="{% url 'service-details' %}" class="stretched-link">
+            <h3>PAN Card Services</h3>
+          </a>
+          <p>Apply for a PAN card or update your existing details through our user-friendly platform. We ensure a secure and efficient application process.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-chat-text" style="color: #20c997;"></i>
+          </div>
+          <a href="{% url 'service-details' %}" class="stretched-link">
+            <h3>Driving License Services</h3>
+          </a>
+          <p>Manage your driving license applications, renewals, and updates through our efficient online services, ensuring timely processing and real-time updates.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
+          </div>
+          <a href="{% url 'service-details' %}" class="stretched-link">
+            <h3>Ration Card Services</h3>
+          </a>
+          <p>Apply for or update your ration card easily through our platform, designed to ensure quick processing and accurate records.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-globe" style="color: #6610f2;"></i>
+          </div>
+          <a href="{% url 'service-details' %}" class="stretched-link">
+            <h3>Address Change Services</h3>
+          </a>
+          <p>Update your registered address quickly and accurately through our streamlined service, ensuring that your records are always up-to-date.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-clock" style="color: #f3268c;"></i>
+          </div>
+          <a href="{% url 'service-details' %}" class="stretched-link">
+            <h3>Voter Registration</h3>
+          </a>
+          <p>Register to vote or update your voter information effortlessly with our online services, ensuring your participation in the electoral process.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+
+
+   <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>What we've done</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">Applications</li>
+        <li data-filter=".filter-product">Products</li>
+        <li data-filter=".filter-branding">Websites</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-1.jpg' %}" class="img-fluid" alt="Application 1">
+          <div class="portfolio-info">
+            <h4>Application 1</h4>
+            <p>Streamlined application for efficient user experience. Features intuitive interface and robust functionality.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-1.jpg' %}" title="Application 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" class="img-fluid" alt="Product 1">
+          <div class="portfolio-info">
+            <h4>Product 1</h4>
+            <p>Innovative product design that meets modern needs. Crafted with attention to detail and usability.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-3.jpg' %}" class="img-fluid" alt="Website 1">
+          <div class="portfolio-info">
+            <h4>Website 1</h4>
+            <p>Engaging website with a clean design and user-friendly navigation. Optimized for performance and accessibility.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-3.jpg' %}" title="Website 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-4.jpg' %}" class="img-fluid" alt="Application 2">
+          <div class="portfolio-info">
+            <h4>Application 2</h4>
+            <p>Enhanced application features with advanced functionalities. Designed for seamless user interaction.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-4.jpg' %}" title="Application 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-5.jpg' %}" class="img-fluid" alt="Product 2">
+          <div class="portfolio-info">
+            <h4>Product 2</h4>
+            <p>Feature-rich product with cutting-edge technology. Designed to enhance user experience and satisfaction.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-5.jpg' %}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-6.jpg' %}" class="img-fluid" alt="Website 2">
+          <div class="portfolio-info">
+            <h4>Website 2</h4>
+            <p>Professional website design focusing on user engagement and interactive elements. Highly responsive and scalable.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-6.jpg' %}" title="Website 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-7.jpg' %}" class="img-fluid" alt="Application 3">
+          <div class="portfolio-info">
+            <h4>Application 3</h4>
+            <p>Comprehensive application solution with enhanced features. User-centric design ensuring effective performance.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-7.jpg' %}" title="Application 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-8.jpg' %}" class="img-fluid" alt="Product 3">
+          <div class="portfolio-info">
+            <h4>Product 3</h4>
+            <p>Innovative product with advanced features and a modern design. Aimed at providing exceptional user satisfaction.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-8.jpg' %}" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <img src="{% static 'main/img/masonry-portfolio/masonry-portfolio-9.jpg' %}" class="img-fluid" alt="Website 3">
+          <div class="portfolio-info">
+            <h4>Website 3</h4>
+            <p>Dynamic website with innovative design elements. Focuses on user interaction and streamlined content delivery.</p>
+            <a href="{% static 'main/img/masonry-portfolio/masonry-portfolio-9.jpg' %}" title="Website 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
+
+   
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>What users are saying about their experience</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 10
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'main/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+            <h3>Rahul Ambapkar</h3>
+            <h4>Government Service User</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The application process was incredibly streamlined. I was able to apply for my PAN card in just a few clicks. Excellent service and user-friendly interface!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'main/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+            <h3>Apurva Sharma</h3>
+            <h4>Ration Card Applicant</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Very impressed with the efficiency of the system. I received updates on my application status in real-time, and the entire process was smooth and hassle-free.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'main/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+            <h3>Dr.Sangeetha D.</h3>
+            <h4>Driving License Holder</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Accessing my driving license information was so easy and quick. The website’s design makes finding information a breeze. Highly recommend!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'main/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+            <h3>Swapnil Goje</h3>
+            <h4>Death Certificate Applicant</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Applying for a death certificate was straightforward. The real-time updates were very helpful, and the entire process was much simpler than I anticipated.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'main/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+            <h3>Jalindar Gandal</h3>
+            <h4>General User</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Fantastic experience! The website’s features are very intuitive, and I found everything I needed without any difficulty. Great job on the user experience!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+
+  
+
+   <!-- Faq Section -->
+<section id="faq" class="faq section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Frequently Asked Questions</h2>
+    <p>Find answers to common questions about our services</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-12">
+        <div class="custom-accordion" id="accordion-faq">
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                How can I apply for a death certificate?
+              </button>
+            </h2>
+
+            <div id="collapse-faq-1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                To apply for a death certificate, log in to your account, navigate to the 'Apply for a Death Certificate' section, and follow the instructions. You will need to provide necessary details such as the deceased’s information and submit the required documents.
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2">
+                How do I check the status of my PAN card application?
+              </button>
+            </h2>
+            <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                You can check the status of your PAN card application by logging into your account and visiting the 'Check PAN Card Status' section. Enter your application reference number to view the current status.
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3">
+                How can I update my driving license information?
+              </button>
+            </h2>
+
+            <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                To update your driving license information, log in to your account, go to the 'Update Driving License Information' section, and follow the instructions. You'll need to provide the updated information and any necessary documents.
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-4">
+                How do I apply for a ration card online?
+              </button>
+            </h2>
+
+            <div id="collapse-faq-4" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                To apply for a ration card, log in to your account and navigate to the 'Apply for Ration Card' section. Fill out the application form with the required details and upload the necessary documents. Submit the form for processing.
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-5">
+                Who can I contact for support?
+              </button>
+            </h2>
+
+            <div id="collapse-faq-5" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                For support, you can contact our helpdesk via the 'Contact Us' page on our website. You can reach out to us through email or phone, and our support team will assist you with any issues or questions you may have.
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Faq Section -->
+
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Our Hardworking Team</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'main/img/team/team-1.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rahul Sonawane</h4>
+                <span>Team Leader</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'main/img/team/shreya.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Shreya Parsewar</h4>
+                <span>Team member</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'main/img/team/varad.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Varad Mandgaonkar</h4>
+                <span>Team member</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'main/img/team/rm.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rahul Mehta</h4>
+                <span>Team Member</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Class room - 301, Gargi Building, MIT-WPU, Kothrud, Pune, Bharat. </p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91 7350069723</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>bharat@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form id="contactForm" action="{% url 'index' %}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              {% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display: none;">Loading</div>
+                  <div class="error-message" style="display: none;"></div>
+                  <div class="sent-message" style="display: none;"></div>
+
+
+                  <button  type="submit">Send Message</button>
+                  
+                </div>
+
+              </div>
+            </form>
+        </div><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">BHARAT</h3>
+      <p>Providing seamless access to essential government services with transparency and efficiency. Your one-stop portal for managing vital documents and information with ease.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">BHARAT</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">GROUP 9</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'main/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'main/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'main/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'main/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'main/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'main/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'main/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'main/js/main.js' %}"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('.php-email-form');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the form from submitting the traditional way
+    
+            // Prepare the form data
+            const formData = new FormData(form);
+    
+            // Send the data using Fetch API
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': '{{ csrf_token }}'  // Ensure CSRF token is included
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Clear previous messages
+                document.querySelector('.error-message').textContent = '';
+                document.querySelector('.sent-message').textContent = '';
+    
+                // Show the appropriate message based on the response
+                if (data.status === 'success') {
+                    document.querySelector('.sent-message').textContent = data.message;
+                } else {
+                    document.querySelector('.error-message').textContent = data.message;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.querySelector('.error-message').textContent = 'There was an error processing your request.';
+            });
+        });
+    });
+    </script>
+    
+
+
+</body>
+
+</html>
