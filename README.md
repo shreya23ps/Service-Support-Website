@@ -62,5 +62,16 @@ The system enhances transparency, reduces administrative burdens, and streamline
 
      	Access the Admin Dashboard to manage user applications and monitor system analytics.
 
+# Contributors
+
+   •	Shreya Parsewar
+   
+      Master of Computer Applications, MIT World Peace University.
+      
+   •	 Rahul Sonawane
+   
+      Master of Computer Applications, MIT World Peace University.
+
+
 
 
