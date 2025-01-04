@@ -137,11 +137,7 @@ Contact Us:
 
 Copy Rights:
 
-   ![image](https://github.com/user-attachments/assets/e8f21a1a-49bf-4a50-b2c4-ae6118aecf53)
-
-
-
-
+   ![image](https://github.com/user-attachments/assets/063d8705-a90e-4ea7-a07d-ac298475f1bf)
 
 # Contributors
 
