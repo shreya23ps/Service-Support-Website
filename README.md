@@ -27,3 +27,20 @@ Software:
 •	Browser: Latest version of Chrome, Firefox, Safari, or Edge
 
 •	Internet Connection: Stable, minimum 1 Mbps
+
+# Installation and Setup
+1.	Clone the Repository:
+   
+
+git clone https://github.com/shreya23ps/Service-Support-Website
+
+cd ServiceSupportWebsite
+
+3.	Install Dependencies:
+   
+o	Ensure necessary libraries or packages are installed. Refer to the documentation for specific commands.
+
+5.	Run the Application:
+   
+o	Follow the steps in the run_instructions.txt file or launch using the integrated server.
+
