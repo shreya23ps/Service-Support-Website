@@ -34,14 +34,17 @@ Blog:
 
    ![image](https://github.com/user-attachments/assets/996f3672-b8ec-442e-be06-745d21a04725)
 
-Add Blogs:
+Add Blog:
 
    ![image](https://github.com/user-attachments/assets/6ff70a57-4c99-47e4-b1f2-b65ccc02e1d1)
 
 
-![image](https://github.com/user-attachments/assets/2b728971-86ff-4163-b16c-cf15824ab647)
+   ![image](https://github.com/user-attachments/assets/2b728971-86ff-4163-b16c-cf15824ab647)
 
-![image](https://github.com/user-attachments/assets/32ee11ba-46bf-49de-a435-6a9b658344c0)
+Contact Us:
+
+   ![image](https://github.com/user-attachments/assets/32ee11ba-46bf-49de-a435-6a9b658344c0)
+
 
 ![image](https://github.com/user-attachments/assets/e8f21a1a-49bf-4a50-b2c4-ae6118aecf53)
 
