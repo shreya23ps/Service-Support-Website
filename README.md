@@ -43,21 +43,31 @@ The system enhances transparency, reduces administrative burdens, and streamline
       cd ServiceSupportWebsite
 
    2.	Create and Activate a Virtual Environment
+  
 
-      On Windows:
-                  python -m venv venv
-                  venv\Scripts\activate
+   On Windows:
 
-      On macOS/Linux:
+      python -m venv venv
+      venv\Scripts\activate
 
-                  python3 -m venv venv
-                  source venv/bin/activate
+   On macOS/Linux:
+
+      python3 -m venv venv
+      source venv/bin/activate
       
-      
-      
-   4.	Run the Application:
+   3.	Apply Migrations
+
+
+      python manage.py makemigrations
+      python manage.py migrate
+     	
+   4.	Run the Development Server
    
-      o	Follow the steps in the run_instructions.txt file or launch using the integrated server.
+      python manage.py runserver
+      
+   After running the above command, the server will start on http://127.0.0.1:8000/. Open this link in your browser to access the application.
+
+      
 
 # Usage Instructions
 
