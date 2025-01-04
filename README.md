@@ -6,9 +6,14 @@ About:
 
    ![image](https://github.com/user-attachments/assets/d6e0926d-f77d-4c9b-9566-0f30d0d4c2d7)
 
-Portfolio:
+Services:
 
    ![image](https://github.com/user-attachments/assets/c54c7bb9-185a-4d75-b448-2f4c62ffa9f1)
+
+Services List:
+
+   ![image](https://github.com/user-attachments/assets/39755db8-88cd-4862-9533-33f577903dc6)
+
 
 ![image](https://github.com/user-attachments/assets/7d22a131-d004-4388-9773-0b8bc7cef529)
 
@@ -28,7 +33,7 @@ Portfolio:
 
 ![image](https://github.com/user-attachments/assets/e8f21a1a-49bf-4a50-b2c4-ae6118aecf53)
 
-![image](https://github.com/user-attachments/assets/39755db8-88cd-4862-9533-33f577903dc6)
+
 
 
 # Service-Support-Website
