@@ -22,9 +22,13 @@ Reviews:
 
    ![image](https://github.com/user-attachments/assets/5217ebc3-c982-4d88-852b-f5013e27f8c1)
 
-![image](https://github.com/user-attachments/assets/41c50872-efe7-4a61-b077-669f10050a50)
+FAQs:
 
-![image](https://github.com/user-attachments/assets/3806f67d-7666-488d-a3e7-75f28f159025)
+   ![image](https://github.com/user-attachments/assets/41c50872-efe7-4a61-b077-669f10050a50)
+
+Team:
+
+   ![image](https://github.com/user-attachments/assets/3806f67d-7666-488d-a3e7-75f28f159025)
 
 ![image](https://github.com/user-attachments/assets/996f3672-b8ec-442e-be06-745d21a04725)
 
