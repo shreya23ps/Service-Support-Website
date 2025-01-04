@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/54f36cf9-fb8a-4c51-816c-5106c657d838)# Service-Support-Website
+
+
+# Service-Support-Website
 Project Overview
 The Service Support Website is an integrated digital platform aimed at revolutionizing the management of essential government services. This project provides a centralized system for users to apply for various government documents, track their status, and manage updates seamlessly.
 
@@ -40,10 +42,19 @@ The system enhances transparency, reduces administrative burdens, and streamline
 
       cd ServiceSupportWebsite
 
-   2.	Install Dependencies:
+   2.	Create and Activate a Virtual Environment
 
-      o	Follow the steps in the run_instructions.txt file or launch using the integrated server.
+      On Windows:
+                  python -m venv venv
+                  venv\Scripts\activate
 
+      On macOS/Linux:
+
+                  python3 -m venv venv
+                  source venv/bin/activate
+      
+      
+      
    4.	Run the Application:
    
       o	Follow the steps in the run_instructions.txt file or launch using the integrated server.
