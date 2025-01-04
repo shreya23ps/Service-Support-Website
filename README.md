@@ -11,3 +11,13 @@ The system enhances transparency, reduces administrative burdens, and streamline
 4. Automated Updates: Maintains and updates electoral rolls based on official records.
 5. Secure Data Management: Ensures data integrity and compliance with regulations.
 6. Admin Dashboard: Facilitates monitoring, approval, and reporting.
+
+# System Requirements
+
+Hardware:
+Minimum: 4 GB RAM, 2-core processor
+Recommended: 8 GB RAM, higher-performance processor
+Software:
+Operating System: Windows 10+, macOS (latest), or Linux
+Browser: Latest version of Chrome, Firefox, Safari, or Edge
+Internet Connection: Stable, minimum 1 Mbps
