@@ -19,13 +19,13 @@ The system enhances transparency, reduces administrative burdens, and streamline
 
 # System Requirements
 
-Hardware:
+   Hardware:
 
    •	Minimum: 4 GB RAM, 2-core processor
 
    •	Recommended: 8 GB RAM, higher-performance processor
 
-Software:
+   Software:
 
    •	Operating System: Windows 10+, macOS (latest), or Linux
 
@@ -50,17 +50,17 @@ Software:
 
 # Usage Instructions
 
-   1.	Register as a New User:
-      o	Navigate to the Register page and complete the sign-up form.
-   
-   2.	Apply for Services:
-      o	Log in, select a service (e.g., PAN Card), complete the application form, and upload required documents.
+   1.	Apply for Services:
+
+     	o	Log in, select a service (e.g., PAN Card), complete the application form, and upload required documents.
    
    3.	Track Status:
-      o	Go to the Status Check section, input your application ID, and view updates.
+
+     	o	Go to the Status Check section, input your application ID, and view updates.
    
-   4.	Admin Tools:
-      o	Access the Admin Dashboard to manage user applications and monitor system analytics.
+   5.	Admin Tools:
+
+     	o	Access the Admin Dashboard to manage user applications and monitor system analytics.
 
 
 
