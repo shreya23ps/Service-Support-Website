@@ -7,7 +7,7 @@ The system enhances transparency, reduces administrative burdens, and streamline
 # Features
 1. User-Friendly Interface: Simplifies access to government services for citizens.
 2. Centralized Service Platform: Allows applications for PAN cards, death certificates, driving licenses, and more.
-3. Real-Time Tracking: Provides real-time updates on application statuses.
+3. Real-Time Tracking: Provides real-time updates on application statuses. 
 4. Automated Updates: Maintains and updates electoral rolls based on official records.
 5. Secure Data Management: Ensures data integrity and compliance with regulations.
 6. Admin Dashboard: Facilitates monitoring, approval, and reporting.
@@ -15,10 +15,9 @@ The system enhances transparency, reduces administrative burdens, and streamline
 # System Requirements
 
 Hardware:
-Minimum: 4 GB RAM, 2-core processor
-Recommended: 8 GB RAM, higher-performance processor
-
+•	Minimum: 4 GB RAM, 2-core processor
+•	Recommended: 8 GB RAM, higher-performance processor
 Software:
-Operating System: Windows 10+, macOS (latest), or Linux
-Browser: Latest version of Chrome, Firefox, Safari, or Edge
-Internet Connection: Stable, minimum 1 Mbps
+•	Operating System: Windows 10+, macOS (latest), or Linux
+•	Browser: Latest version of Chrome, Firefox, Safari, or Edge
+•	Internet Connection: Stable, minimum 1 Mbps
