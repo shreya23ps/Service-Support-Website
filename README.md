@@ -17,6 +17,7 @@ The system enhances transparency, reduces administrative burdens, and streamline
 Hardware:
 Minimum: 4 GB RAM, 2-core processor
 Recommended: 8 GB RAM, higher-performance processor
+
 Software:
 Operating System: Windows 10+, macOS (latest), or Linux
 Browser: Latest version of Chrome, Firefox, Safari, or Edge
