@@ -52,15 +52,15 @@ The system enhances transparency, reduces administrative burdens, and streamline
 
    1.	Apply for Services:
 
-     	o	Log in, select a service (e.g., PAN Card), complete the application form, and upload required documents.
+     	Log in, select a service (e.g., PAN Card), complete the application form, and upload required documents.
    
    3.	Track Status:
 
-     	o	Go to the Status Check section, input your application ID, and view updates.
+     	Go to the Status Check section, input your application ID, and view updates.
    
    5.	Admin Tools:
 
-     	o	Access the Admin Dashboard to manage user applications and monitor system analytics.
+     	Access the Admin Dashboard to manage user applications and monitor system analytics.
 
 
 
