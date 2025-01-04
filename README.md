@@ -30,9 +30,14 @@ Team:
 
    ![image](https://github.com/user-attachments/assets/3806f67d-7666-488d-a3e7-75f28f159025)
 
-![image](https://github.com/user-attachments/assets/996f3672-b8ec-442e-be06-745d21a04725)
+Blog:
 
-![image](https://github.com/user-attachments/assets/6ff70a57-4c99-47e4-b1f2-b65ccc02e1d1)
+   ![image](https://github.com/user-attachments/assets/996f3672-b8ec-442e-be06-745d21a04725)
+
+Add Blogs:
+
+   ![image](https://github.com/user-attachments/assets/6ff70a57-4c99-47e4-b1f2-b65ccc02e1d1)
+
 
 ![image](https://github.com/user-attachments/assets/2b728971-86ff-4163-b16c-cf15824ab647)
 
