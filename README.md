@@ -31,15 +31,17 @@ Software:
 # Installation and Setup
    1.	Clone the Repository:
    
+
+   
       git clone https://github.com/shreya23ps/Service-Support-Website
 
       cd ServiceSupportWebsite
 
-   2. Install Dependencies:
-   
-      o  Ensure necessary libraries or packages are installed. Refer to the documentation for specific commands.
+   2.	Install Dependencies:
 
-   3.	Run the Application:
+      o	Follow the steps in the run_instructions.txt file or launch using the integrated server.
+
+   4.	Run the Application:
    
       o	Follow the steps in the run_instructions.txt file or launch using the integrated server.
 
