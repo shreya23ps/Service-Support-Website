@@ -14,10 +14,13 @@ Services List:
 
    ![image](https://github.com/user-attachments/assets/39755db8-88cd-4862-9533-33f577903dc6)
 
+Portfolio: 
 
-![image](https://github.com/user-attachments/assets/7d22a131-d004-4388-9773-0b8bc7cef529)
+   ![image](https://github.com/user-attachments/assets/7d22a131-d004-4388-9773-0b8bc7cef529)
 
-![image](https://github.com/user-attachments/assets/5217ebc3-c982-4d88-852b-f5013e27f8c1)
+Reviews:
+
+   ![image](https://github.com/user-attachments/assets/5217ebc3-c982-4d88-852b-f5013e27f8c1)
 
 ![image](https://github.com/user-attachments/assets/41c50872-efe7-4a61-b077-669f10050a50)
 
