@@ -72,7 +72,7 @@ The system enhances transparency, reduces administrative burdens, and streamline
    
       Master of Computer Applications, MIT World Peace University.
 
-![image](https://github.com/user-attachments/assets/c7b38c71-12e3-4548-ab86-2bc391c1526d)
+
 
 
 
