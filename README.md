@@ -48,27 +48,30 @@ The system enhances transparency, reduces administrative burdens, and streamline
    On Windows:
 
       python -m venv venv
+      
       venv\Scripts\activate
 
    On macOS/Linux:
 
       python3 -m venv venv
+      
       source venv/bin/activate
       
    3.	Apply Migrations
 
 
       python manage.py makemigrations
+      
       python manage.py migrate
      	
    4.	Run the Development Server
    
       python manage.py runserver
       
+   
    After running the above command, the server will start on http://127.0.0.1:8000/. Open this link in your browser to access the application.
 
-      
-
+         
 # Usage Instructions
 
    1.	Apply for Services:
